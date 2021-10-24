@@ -1,0 +1,1 @@
+grayRouter=com.dubbo.spi.demo.consumer.router.GrayRouteFactory

@@ -1,0 +1,42 @@
+server:
+  port: 8089
+#dubbo:
+#  protocol:
+#    name: dubbo
+#    serialization: hessian2
+#    port: 20882
+#  registry:
+#    protocol: zookeeper
+#    timeout: 30000
+#    address: 127.0.0.1:2181
+##    address: zk1.cluster.carzone360.net:2181,zk2.cluster.carzone360.net:2181,zk3.cluster.carzone360.net:2181
+##    group: b0
+#  consumer:
+#    retries: 2
+#    timeout: 10000
+#    heck: true
+#  #    router: grayRouter
+#  application:
+#    name: consumer
+#    id: consumer
+#  provider:
+#    retries: 3
+debug: true
+spring:
+  dubbo:
+    application:
+      name: consumer
+      id: consumer
+    protocol:
+      name: dubbo
+      serialization: hessian2
+      port: 20882
+    registry:
+      protocol: zookeeper
+      timeout: 30000
+      address: 127.0.0.1:2181
+    consumer:
+      retries: 2
+      timeout: 10000
+    provider:
+      retries: 3
